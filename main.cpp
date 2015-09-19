@@ -1,4 +1,4 @@
-#include <QApplication>
+#include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QtQml>
 
@@ -7,7 +7,7 @@
 int main(int argc, char *argv[])
 {
     qmlRegisterType<WeatherAPI>("org.thepaffy.weatherapi", 1, 0, "WeatherAPI");
-    QApplication app(argc, argv);
+    QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));

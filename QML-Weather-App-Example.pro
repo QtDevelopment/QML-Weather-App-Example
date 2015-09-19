@@ -1,7 +1,6 @@
 TEMPLATE = app
 
-QT += qml quick widgets network
-CONFIG += qtquickcompiler
+QT += qml quick network
 
 SOURCES += main.cpp \
     weatherapi.cpp

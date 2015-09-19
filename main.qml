@@ -1,13 +1,13 @@
-import QtQuick 2.2
-import QtQuick.Controls 1.1
+import QtQuick 2.5
+import QtQuick.Controls 1.4
 import QtQuick.Window 2.0
 import QtQuick.Layouts 1.1
 import org.thepaffy.weatherapi 1.0
 
-Window {
+ApplicationWindow {
     visible: true
-    width: Screen.desktopAvailableWidth
-    height: Screen.desktopAvailableHeight
+    width: 480
+    height: 800
     title: qsTr("QML-Weather-App-Example")
     color: "green"
 
@@ -63,17 +63,17 @@ Window {
 
         ListElement {
             name: "Koblenz"
-            searchString: "Koblenz, de"
+            searchString: "Koblenz,de"
         }
 
         ListElement {
             name: "München"
-            searchString: "München, de"
+            searchString: "München,de"
         }
 
         ListElement {
             name: "Rom"
-            searchString: "Rom, it"
+            searchString: "Rom,it"
         }
     }
 
